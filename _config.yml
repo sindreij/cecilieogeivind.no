@@ -1,0 +1,17 @@
+# Site settings
+title: Cecilie og Eivind
+email: sindre@sindrejohansen.no
+description: > # this means to ignore newlines until "baseurl:"
+  Cecilie og Eivind gifter seg
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.cecilieogeivind.no" # the base hostname & protocol for your site
+twitter_username: cecilieogeivind
+github_username:  cecilieogeivind
+
+# Build settings
+markdown: kramdown
+
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+- README.md
