@@ -75,15 +75,47 @@ layout: default
     </div>
 </div>
 
+<script type="text/javascript">
+var map;
+function initialize() {
+  var mapOptions = {
+    zoom: 13,
+    center: new google.maps.LatLng(47.620467,-122.349116),
+  };
+
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var myLatlng = new google.maps.LatLng(47.620614, -122.348880);
+
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'Space Needle, Seattle WA'
+  });
+}
+
+function loadScript() {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://maps.googleapis.com/maps/api/js?key={API_KEY}&callback=initialize';
+  document.body.appendChild(script);
+}
+
+window.onload = loadScript;
+
+</script>
+
 <div class="row">
     <div class="col-sm-12 pagebox" id="beliggenhet">
         <h2>Tanum Kirke</h2>
         <p>Vielsen finner sted i Tanum kirke klokken 14.30 og er åpen for alle som vil dele denne med oss.</p>
-        <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Tanum%20kirke%2C%20B%C3%A6rum%2C%20Norway&key=AIzaSyAGvuTQVzAUMr0mo3ECfVfEF0G7TguFjgw&zoom=13" allowfullscreen></iframe>
+        <div class="mapsoverlay" onClick="style.pointerEvents='none'"></div>
+        <iframe width="100%" height="450px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Tanum%20kirke%2C%20B%C3%A6rum%2C%20Norway&key=AIzaSyAGvuTQVzAUMr0mo3ECfVfEF0G7TguFjgw&center=59.888736,10.510234&zoom=13&language=no" allowfullscreen></iframe>
 
         <h2>Solhaug Gård</h2>
         <p>Inviterte middagsgjester og kaffegjester er velkommen til Solhaug gård.</p>
-        <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d127802.34908819073!2d10.479660200000001!3d59.96678809999891!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46411212e5e2c0d9%3A0x766f674b05854d4d!2sKirkebyveien+27!5e0!3m2!1sno!2sno!4v1397466707827" allowfullscreen></iframe>
+        <div class="mapsoverlay" onClick="style.pointerEvents='none'"></div>
+        <iframe width="100%" height="450px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=q=Kirkebyveien%2027%2C%20Lommedalen%2C%20Norway&key=AIzaSyAGvuTQVzAUMr0mo3ECfVfEF0G7TguFjgw&zoom=11&language=no&center=59.918736,10.510234" allowfullscreen></iframe>
     </div>
 </div>
 
