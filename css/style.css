@@ -12,15 +12,27 @@ body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
+h2 {
+    font-family: 'Dosis', cursive;
+}
+
+.extrabackground {
+    background-image: url('../img/monogram_white.png');
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+    background-attachment: fixed;
+    background-size: 300px;
+}
+
 .container {
-    margin-top: 20px;
+    padding-top: 20px;
     border-radius: 10px;
     /*background-color: #fde3d4;*/
     /*background-color: #ECC9B5;*/
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
-.col-sm-12.pagebox {
+.pagebox {
     background-color: #f9f9f9;
     border-radius: 10px;
     margin-top: 30px;
@@ -28,7 +40,7 @@ body {
 }
 
 .portrett {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: right;
 }
 
@@ -99,6 +111,21 @@ body {
     margin-left: -30%
 }
 
+.monogram {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    z-index: 15;
+    width: 150px;
+ /*   left: 50%;
+    width: 120px;
+    margin-left: -60px;*/
+}
+
+.monogram img {
+    width: 120px;
+}
+
 .headertext h1 {
     text-align: center;
     /*font-family: 'Dosis', cursive;*/
@@ -107,6 +134,12 @@ body {
     font-size: 6em;
     /*text-transform: uppercase;*/
     text-shadow: 0px 0px 4px black; 
+    line-height: 0.8em;
+}
+
+.headertext h1 small {
+    color: #eaeaea;
+    font-size: 0.6em;
 }
 
 .headertext h1 .larger {
