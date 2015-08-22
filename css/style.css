@@ -43,6 +43,7 @@ body {
 
 .menubox ol {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 10px;
     margin: 0;
     padding: 0;
