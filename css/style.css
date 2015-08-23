@@ -184,10 +184,30 @@ h2 {
 @media (min-width: 992px) {
     .headertext h1 {
         font-size: 6em;
-    }   
+    }
 
     .hashtag {
         font-size: 2.5em;
+    }
+}
+
+@media(max-width: 500px) {
+    .headertext {
+        bottom: 40px;
+    }
+
+    .headertext h1 {
+        font-size: 2em;
+    }
+}
+
+@media(max-width: 340px) {
+    .headertext {
+        bottom: 40px;
+    }
+
+    .headertext h1 {
+        font-size: 1.5em;
     }
 }
 
