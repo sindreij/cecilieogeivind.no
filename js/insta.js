@@ -9,7 +9,7 @@ function updateImages(data) {
         a.attr('href', obj.link);
         a.attr('target', '_blank');
         var img = $('<img></img>');
-        img.attr('src', obj.images.thumbnail.url);
+        img.attr('src', obj.images.low_resolution.url);
         a.append(img);
         div.append(a);
         return div;
