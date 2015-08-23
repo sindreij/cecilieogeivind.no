@@ -245,11 +245,25 @@ h2 {
     margin-right: -5px;
 }
 
-#insta div {
-    padding: 5px;
+#insta .fa {
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
-#insta div img {
+#insta .instaimage {
+    padding: 5px;
+    position: relative;
+}
+
+#insta .instaimage img {
     width: 250px;
     max-width: 100%;
+}
+
+#insta .caption {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    text-shadow: 0px 0px 4px #333; 
 }
