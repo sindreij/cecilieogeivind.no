@@ -21,7 +21,7 @@ function updateImages(data) {
 
 function fetchAndUpdateImages() {
     "use strict";
-    $.ajax('https://api.instagram.com/v1/tags/nrksommer/media/recent?client_id=1ed23d567e4c4f42852d1651286ed5a0', {
+    $.ajax('https://api.instagram.com/v1/tags/cecilieogeivind/media/recent?client_id=1ed23d567e4c4f42852d1651286ed5a0', {
         dataType: 'jsonp'
     }).then(updateImages);
 }
