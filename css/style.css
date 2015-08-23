@@ -61,16 +61,23 @@ h2 {
 .menubox {
     margin-top: 5px;
     padding: 0;
+    margin-left: 10px;
 }
 
 .menubox ol {
     display: flex;
-    flex-wrap: wrap;
     margin-top: 10px;
     margin: 0;
     padding: 0;
-    flex-directon: row;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+.menubox ol {
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
 }
 
 .menubox ol>li {
@@ -96,10 +103,15 @@ h2 {
 }
 
 .carousel#top-carousel {
-    margin-left: -50px;
-    margin-right: -50px;    
     padding: 0;
     border-radius: 10px;
+}
+
+@media (min-width: 840px) {
+.carousel#top-carousel {
+    margin-left: -50px;
+    margin-right: -50px;    
+}
 }
 
 .carousel#top-carousel img {
@@ -118,7 +130,7 @@ h2 {
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
-    font-size: 2.5em;
+    font-size: 1em;
     text-shadow: 0px 0px 4px black; 
 }
 
@@ -153,10 +165,30 @@ h2 {
     /*font-family: 'Dosis', cursive;*/
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-    font-size: 6em;
+    font-size: 3em;
     /*text-transform: uppercase;*/
     text-shadow: 0px 0px 4px black; 
     line-height: 0.8em;
+}
+
+@media (min-width: 768px) {
+    .headertext h1 {
+        font-size: 4em;
+    }
+
+    .hashtag {
+        font-size: 2.0em;
+    }
+}
+
+@media (min-width: 992px) {
+    .headertext h1 {
+        font-size: 6em;
+    }   
+
+    .hashtag {
+        font-size: 2.5em;
+    }
 }
 
 .headertext h1 small {
