@@ -236,3 +236,12 @@ h2 {
    top:450px;  /* your iframe height */
    margin-top:-450px;  /* your iframe height */
 }
+
+#insta {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#insta div {
+    margin: 10px;
+}
