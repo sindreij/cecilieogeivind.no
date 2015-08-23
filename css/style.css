@@ -193,17 +193,25 @@ h2 {
 
 @media(max-width: 500px) {
     .headertext {
-        bottom: 40px;
+        bottom: 20px;
     }
 
     .headertext h1 {
         font-size: 2em;
     }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .hashtag {
+        bottom: 10px;
+    }
 }
 
 @media(max-width: 340px) {
     .headertext {
-        bottom: 40px;
+        bottom: 20px;
     }
 
     .headertext h1 {
