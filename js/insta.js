@@ -12,7 +12,7 @@ function updateImages(data) {
         var img = $('<img></img>');
         var caption = $('<div class="caption"></div>');
         caption.text('@' + obj.user.username);
-        img.attr('src', obj.images.low_resolution.url);
+        img.attr('src', obj.images.standard_resolution.url);
         a.append(img);
         div.append(a);
         div.append(caption);
@@ -25,7 +25,7 @@ function updateImages(data) {
 
 function fetchAndUpdateImages() {
     "use strict";
-    $.ajax('https://api.instagram.com/v1/tags/cecilieogeivind/media/recent?client_id=1ed23d567e4c4f42852d1651286ed5a0', {
+    $.ajax('https://api.instagram.com/v1/tags/cecilieogeivind/media/recent?client_id=1ed23d567e4c4f42852d1651286ed5a0&count=33', {
         dataType: 'jsonp'
     }).then(updateImages);
 }

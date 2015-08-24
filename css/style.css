@@ -35,6 +35,8 @@ h2 {
 .pagebox {
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .row.pagebox {
@@ -51,7 +53,14 @@ h2 {
 
 .portrett {
     margin-top: 10px;
-    text-align: right;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .portrett {
+        text-align: right;
+    }
 }
 
 .portrett img {
@@ -62,31 +71,30 @@ h2 {
     margin-top: 5px;
     padding: 0;
     margin-left: 10px;
+    text-align: center;
 }
 
 .menubox ol {
-    display: flex;
     margin-top: 10px;
     margin: 0;
     padding: 0;
-    flex-direction: column;
-}
-
-@media (min-width: 768px) {
-.menubox ol {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 }
 
 .menubox ol>li {
-    display: flex;
     /*display: block;
     margin-right: 20px;
     float: left;*/
     list-style-type: none;
     padding: 0;
+}
+
+@media (min-width: 768px) {
+.menubox ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 }
 
 .menubox ol>li>a {
@@ -110,7 +118,7 @@ h2 {
 @media (min-width: 840px) {
 .carousel#top-carousel {
     margin-left: -50px;
-    margin-right: -50px;    
+    margin-right: -50px;
 }
 }
 
@@ -131,7 +139,7 @@ h2 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
     font-size: 1em;
-    text-shadow: 0px 0px 4px black; 
+    text-shadow: 0px 0px 4px black;
 }
 
 .headertext {
@@ -167,7 +175,7 @@ h2 {
     font-weight: 300;
     font-size: 3em;
     /*text-transform: uppercase;*/
-    text-shadow: 0px 0px 4px black; 
+    text-shadow: 0px 0px 4px black;
     line-height: 0.8em;
 }
 
@@ -225,12 +233,12 @@ h2 {
 }
 
 .headertext h1 .larger {
-    /*font-size: 130%;?*/   
+    /*font-size: 130%;?*/
 }
 
 .mapsoverlay {
-   background:transparent; 
-   position:relative; 
+   background:transparent;
+   position:relative;
    width:100%;
    height:450px; /* your iframe height */
    top:450px;  /* your iframe height */
@@ -256,8 +264,18 @@ h2 {
 }
 
 #insta .instaimage img {
-    width: 250px;
+    width: 300px;
     max-width: 100%;
+}
+
+@media(max-width: 685px) {
+    #insta .instaimage img {
+        width: 100%;
+    }
+
+    #insta .instaimage {
+        width: 100%;
+    }
 }
 
 #insta .caption {
@@ -265,5 +283,5 @@ h2 {
     bottom: 10px;
     right: 10px;
     color: white;
-    text-shadow: 0px 0px 4px #333; 
+    text-shadow: 0px 0px 4px #333;
 }
