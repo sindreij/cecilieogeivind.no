@@ -1,6 +1,5 @@
 function updateImages(data) {
     "use strict";
-    console.log(data);
     var element = $('#insta');
     element.html('');
 
