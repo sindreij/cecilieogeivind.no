@@ -43,14 +43,14 @@ a:hover {
 
 .header {
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 1300px;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .header .carousel {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1300px;
     overflow: hidden;
 }
 
@@ -62,7 +62,7 @@ a:hover {
     padding: 0;
 }
 
-@media(min-width: 1500px) {
+@media(min-width: 1300px) {
     .header {
         margin-top: 20px;
     }
